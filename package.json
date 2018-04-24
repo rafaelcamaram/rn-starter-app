@@ -11,6 +11,11 @@
   "jest": {
     "preset": "react-native"
   },
+  "rnpm": {
+    "assets": [
+      "./resources/fonts"
+    ]
+  },
   "devDependencies": {
     "babel-preset-react-native-stage-0": "^1.0.1",
     "jest": "^22.4.3",
@@ -19,7 +24,8 @@
   },
   "dependencies": {
     "react": "16.3.0",
-    "react-native": "~0.54.1"
+    "react-native": "~0.54.1",
+    "styled-components": "^3.2.6"
   },
   "//": {
     "babel-preset-react-native-stage-0": "Babel presets for React Native applications. React Native itself uses this Babel preset by default when transforming your app's source code.",

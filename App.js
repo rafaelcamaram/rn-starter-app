@@ -1,23 +1,32 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import MainScreen from '@screens/MainScreen/MainScreen';
-
+import typography from '@config/typography';
+import styled from 'styled-components/native'
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
+      <ViewStyled>
+        <LargeText>We're using the Large Text typography!</LargeText>
+        <MyTextTwo>Open up App.js to start working on your app!</MyTextTwo>
         <MainScreen/>
-      </View>
+      </ViewStyled>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const ViewStyled = styled.View`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+
+  background: papayawhip;
+`;
+
+const LargeText = typography.largeText.extend`
+  color: #000;
+`;
+
+const MyTextTwo = styled.Text`
+  text-align: center;
+`;
