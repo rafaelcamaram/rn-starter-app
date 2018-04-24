@@ -1,8 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import styled from 'styled-components/native'
+
 import MainScreen from '@screens/MainScreen/MainScreen';
 import typography from '@config/typography';
-import styled from 'styled-components/native'
 export default class App extends React.Component {
   render() {
     return (

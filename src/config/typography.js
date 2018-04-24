@@ -3,29 +3,33 @@ import styled from 'styled-components/native'
 
 import fonts from "@config/fonts";
 
+// Available font sizes
 const LARGE_TEXT = 16;
 const MEDIUM_TEXT = 14;
 const SMALL_TEXT = 12;
-const REGULAR_TEXT = fonts.openSansRegular;
-const SEMIBOLD_TEXT = fonts.openSansSemibold;
+
+// Available font families
+const REGULAR_TEXT = fonts.OpenSansRegular;
+const SEMIBOLD_TEXT = fonts.OpenSansSemibold;
+const BOLD_TEXT = fonts.OpenSansBold;
 
 const typography = {
-  largeText: fonts.OpenSansBold.extend`
+  largeText: BOLD_TEXT.extend`
     font-size: ${LARGE_TEXT};
   `,
-  largeTextSemibold: fonts.OpenSansSemibold.extend`
+  largeTextSemibold: SEMIBOLD_TEXT.extend`
     font-size: ${LARGE_TEXT};
   `,
-  largeTextBold: fonts.OpenSansBold.extend`
+  largeTextBold: BOLD_TEXT.extend`
     font-size: ${LARGE_TEXT};
   `,
-  mediumTextSemibold: fonts.OpenSansSemibold.extend`
+  mediumTextSemibold: SEMIBOLD_TEXT.extend`
     font-size: ${MEDIUM_TEXT};
   `,
-  smallText: fonts.OpenSansRegular.extend`
+  smallText: REGULAR_TEXT.extend`
     font-size: ${SMALL_TEXT};
   `,
-  smallTextSemibold: fonts.OpenSansSemibold.extend`
+  smallTextSemibold: SEMIBOLD_TEXT.extend`
     font-size: ${SMALL_TEXT};
   `,
 }
