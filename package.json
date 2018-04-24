@@ -2,12 +2,6 @@
   "name": "rn-starter-app",
   "version": "0.1.0",
   "private": true,
-  "devDependencies": {
-    "babel-preset-react-native-stage-0": "^1.0.1",
-    "jest": "^22.4.3",
-    "jest-react-native": "^18.0.0",
-    "react-test-renderer": "16.3.0-alpha.1"
-  },
   "scripts": {
     "start": "react-native start",
     "android": "react-native run-android",
@@ -17,8 +11,19 @@
   "jest": {
     "preset": "react-native"
   },
+  "devDependencies": {
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "jest": "^22.4.3",
+    "jest-react-native": "^18.0.0",
+    "react-test-renderer": "16.3.0-alpha.1"
+  },
   "dependencies": {
     "react": "16.3.0",
     "react-native": "~0.54.1"
+  },
+  "//": {
+    "babel-preset-react-native-stage-0": "Babel presets for React Native applications. React Native itself uses this Babel preset by default when transforming your app's source code.",
+    "jest": "Jest is a complete and easy to set up JavaScript testing solution. In fact, Jest works out of the box for any React project.",
+    "react-test-renderer": "This package provides an experimental React renderer that can be used to render React components to pure JavaScript objects, without depending on the DOM or a native mobile environment. Essentially, this package makes it easy to grab a snapshot of the 'DOM tree' rendered by a React DOM or React Native component without using a browser or jsdom."
   }
 }
